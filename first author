@@ -245,19 +245,21 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://rsim.berlin/team/members/binger-chen" target="_blank">Binger Chen</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://rsim.berlin/team/members/tacettin-bok" target="_blank">Tacettin Emre Bök</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  <a href="https://rsim.berlin/team/members/behnood-rasti" target="_blank">Behnood Rasti</a>,</span>
+                  <span class="author-block">
+                  <a href="https://www.bifold.berlin/people/prof-dr-volker-markl.html" target="_blank">Volker Markl</a>,</span>
+                  <span class="author-block">
+                    <a href="https://rsim.berlin/team/members/begum-demir" target="_blank">Begüm Demir</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Technische Universität Berlin & BIFOLD</span>
                   </div>
 
                   <div class="column has-text-centered">
