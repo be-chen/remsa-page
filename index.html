@@ -388,125 +388,135 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-light">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+      <h2 class="title is-3" style="font-size: 2em; margin-bottom: 30px;">📊 REMSA Benchmark Coverage</h2>
 
+      <table style="margin: 0 auto; border-collapse: collapse; width: 100%;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid #ccc; padding: 8px;">Category</th>
+            <th style="border: 1px solid #ccc; padding: 8px;">Examples of Scenarios</th>
+            <th style="border: 1px solid #ccc; padding: 8px;">Modalities</th>
+            <th style="border: 1px solid #ccc; padding: 8px;">Typical Constraints</th>
+          </tr>
+        </thead>
 
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">Land Cover Classification</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Sentinel-1/2, PlanetScope, MODIS, HSI, nighttime imagery</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">SAR, multispectral, hyperspectral, optical</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Few-shot labels, CPU-only, limited compute, OA-focused</td>
+          </tr>
 
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">Segmentation & Mapping</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Flood mapping, wildfire detection, high-res urban expansion, roads</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">SAR, multispectral, thermal, stereo</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">High mIoU, fine spatial detail, real-time inference</td>
+          </tr>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">Change Detection</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Urban growth, coastal change, wildfire recovery</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">SAR, multispectral</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Low compute, few-shot labels, embedded devices</td>
+          </tr>
 
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">Object Detection</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Buildings, ports, industrial facilities</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">High-res optical</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">High mAP, low false positives</td>
+          </tr>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">Multi-Modal Fusion</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">LiDAR + optical, SAR + optical, image + text</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">LiDAR, optical, SAR, text</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">High accuracy, robust fusion required</td>
+          </tr>
+
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">Self-Supervised / Unsupervised</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Unlabeled SAR, HSI, LiDAR (Amazon/Arctic/Europe)</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">SAR, hyperspectral, LiDAR</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">SSL compatibility, strong representations</td>
+          </tr>
+
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">Zero-Shot / Out-of-the-Box</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Flood mapping, deforestation, canopy height, HSI crops</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">SAR, multispectral, LiDAR, text-image</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">No labels available</td>
+          </tr>
+
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">Resource-Constrained Inference</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Jetson Nano, Raspberry Pi, laptop-only workflows</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">SAR, multispectral</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">Lightweight models, fast inference</td>
+          </tr>
+
+        </tbody>
+      </table>
+
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
+<section class="hero is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title is-3" style="font-size: 2em; margin-bottom: 30px;">📈 Quantitative Results</h2>
 
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
+      <table style="margin: 0 auto; border-collapse: collapse; width: 100%;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid #ccc; padding: 8px;">System</th>
+            <th style="border: 1px solid #ccc; padding: 8px;">Avg Top-1 ↑</th>
+            <th style="border: 1px solid #ccc; padding: 8px;">HQ Hit ↑</th>
+            <th style="border: 1px solid #ccc; padding: 8px;">MRR ↑</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;"><strong>REMSA (Ours)</strong></td>
+            <td style="border: 1px solid #ccc; padding: 8px;"><strong>75.76</strong></td>
+            <td style="border: 1px solid #ccc; padding: 8px;"><strong>40.00%</strong></td>
+            <td style="border: 1px solid #ccc; padding: 8px;"><strong>0.38</strong></td>
+          </tr>
+
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">REMSA-Naive</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">72.67</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">37.33%</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">0.36</td>
+          </tr>
+
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">DB-Retrieval</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">67.37</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">17.33%</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">0.25</td>
+          </tr>
+
+          <tr>
+            <td style="border: 1px solid #ccc; padding: 8px;">Unstructured-RAG</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">71.23</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">30.67%</td>
+            <td style="border: 1px solid #ccc; padding: 8px;">0.24</td>
+          </tr>
+
+        </tbody>
+      </table>
+
     </div>
-  </section>
-<!--End paper poster -->
-
-
+  </div>
+</section>
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
